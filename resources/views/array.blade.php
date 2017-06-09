@@ -4,9 +4,9 @@
 	<title>Ini Halaman Index</title>
 </head>
 <body>
-<h1>Daftar Nama: </h1>
-@foreach($data as $datas)
-	<li>{{$datas}}</li>
+<h1>Daftar </h1>
+@foreach($ahaha as $data)
+	<li>{{$data}}</li>
 @endforeach
 </body>
 </html>

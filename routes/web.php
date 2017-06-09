@@ -11,10 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('halaman/{$id}', 'rumahcontroller@param');
+// Route::get('satu', 'rumahcontroller@a');
+// Route::get('dua', 'rumahcontroller@b');
+// Route::get('tiga', 'rumahcontroller@c');
+// Route::get('empat', 'rumahcontroller@d');
+// Route::get('lima', 'rumahcontroller@e');
 
-Route::get('/{a}', 'rumahcontroller@parameter');
+// Route::get('halaman/{$id}', 'rumahcontroller@param');
+
+// Route::get('/{a}', 'rumahcontroller@parameter');
+
+// Route::get('test1', 'cobacontroller@test');
+// Route::get('{id}', 'cobacontroller@test2');
+Route::get('coba', 'cobacontroller@index');
+Route::get('ulang', 'cobacontroller@ulang');
+
+Route::get('{data}', 'cobacontroller@array');
