@@ -38,4 +38,16 @@ class cobacontroller extends Controller
     	return view('array', compact('ahaha'));
     }
 
+    public function test3()
+    {
+        $a = coba::where('nama', 'like', '%Shintiya%')->get();
+        return $a; 
+    }
+
+    public function test4($id)
+    {
+        $a = coba::where('nama', 'like', '%'.$id.'%') -> orwhere('jurusan', 'like', $id)->get();
+        return $a; 
+    }
+
 }
